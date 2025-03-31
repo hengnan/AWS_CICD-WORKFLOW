@@ -17,3 +17,9 @@ module "backend" {
   bucket_name                                         = var.bucket_name
   table_name                                          = var.table_name
 }
+
+module "dns_acm" {
+  source                                              = "./modules/route53"
+  root_domain                                         = var.root_domain
+  dns_record_ttl                                      = var.dns_record_ttl
+}
