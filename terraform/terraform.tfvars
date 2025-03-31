@@ -4,3 +4,7 @@ bucket_name = "terraform-state-bucket-42"
 table_name = "terraform_state_locks"
 root_domain = "cloud-hengnan.org"
 dns_record_ttl = 300
+website_bucket = "cloud-hengnan.org"
+force_destroy = false
+index_document = "index.html"
+versioning_enabled = "Enabled"
